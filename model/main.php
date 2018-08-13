@@ -39,26 +39,11 @@
         <script src="assets/js/jquery.app.js"></script>
 
         <script src="assets/plugins/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="assets/plugins/bootstrap-sweetalert/sweet-alert.min.js"></script>
         
         <script src="assets/js/jquery.validate.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                var validator = $('#form_checkin').validate({
-                    rules: {
-                        noreg: {
-                            required: true
-                        }
-                    },
-                    messages: {
-                        noreg: {
-                            required: '*) field is required'
-                        }
-                    },
-                    submitHandler: function(form) {
-                        $('#form_checkin').trigger('reset');
-                    }
-                });
-            });            
-        </script>
+        <!-- costum script -->
+        <?=$main->getActScript()?>
+        
     </body>
 </html>

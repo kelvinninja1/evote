@@ -15,25 +15,24 @@
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    
+    <link href="assets/plugins/bootstrap-sweetalert/sweet-alert.css" rel="stylesheet" type="text/css" />
 
     <style>
         .carousel .item {
-            height: 303px;
+            height: 318px;
         }
 
         .item img {
             position: absolute;
             top: 0;
             left: 0;
-            min-height: 303px;
+            min-height: 318px;
         }
-    </style>
-
-    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-<!--    <script src="assets/js/modernizr.min.js"></script>    -->
+        
+        #uservote {
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>    
 </head>

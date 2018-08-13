@@ -14,22 +14,26 @@
         </div>
     </div>
 
-    <?php if (!isset($_SESSION['sesi_pilih'])) { ?>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="card-box">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="card-box">
+                <input type="hidden" id="session" value="<?=@$_SESSION['id_user']?>" />
+                <?php if (!isset($_SESSION['sesi_pilih'])) { ?>
                     <div class="row">
-                        <div class="col-lg-8 col-md-8 col-sm-8">
+                        <div class="col-lg-8 col-md-8 hidden-sm hidden-xs">
                             <?php include 'model/carousel.php'; ?>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-8">
                             <?php include 'model/login.php'; ?>
                         </div>
                     </div>
-                </div>            
-            </div>
+                <?php
+                } else {
+                    include 'view/voting.php';
+                }
+                ?>
+            </div>            
         </div>
-    <?php } else { 
-        include 'view/voting.php';
-    } ?>
+    </div>
+    
 </div>
