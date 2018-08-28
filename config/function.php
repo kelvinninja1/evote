@@ -1,6 +1,8 @@
 <?php
-
 date_default_timezone_set('Asia/Jakarta');
+
+define('company_name', 'Al-Irsyad Satya Islamic School');
+define('apps_name', 'e-Vote System');
 
 $seminggu = array("Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu");
 $hari = date("w");
@@ -15,6 +17,3 @@ $jam_sekarang = date("H:i:s");
 $nama_bln=array(1=> "Januari", "Februari", "Maret", "April", "Mei", 
                     "Juni", "Juli", "Agustus", "September", 
                     "Oktober", "November", "Desember");
-
-define('company_name', 'Al-Irsyad Satya Islamic School');
-define('apps_name', 'e-Vote System');

@@ -1,7 +1,5 @@
 <?php
-
 require '../../../config/class.php';
-
 $db = new dbObj();
 $connString = $db->getConstring();
 $eClass = new Pemilih($connString);
@@ -34,7 +32,9 @@ class Pemilih  {
 
     function getRecords($req, $col, $tb_name) {                
 
-        $sqlTot = "SELECT no_reg, nama_peserta, kelas, CASE WHEN status_vote = 0 THEN 'Belum memilih' ELSE 'Sudah memilih' END AS status_vote";
+        $sqlTot = "SELECT no_reg, nama_peserta, kelas, "
+                . "CASE WHEN status_vote = 0 THEN 'Belum memilih' "
+                . "ELSE 'Sudah memilih' END AS status_vote";
         $sqlTot .= " FROM ". $tb_name;    
 
         $sql = $sqlTot;

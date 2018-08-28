@@ -70,7 +70,7 @@ $(document).ready(function () {
                     $('#edit_id').val(id);
 
                     v_edit = $.ajax({
-                        url: 'application/user/edit.php?id=' + id,
+                        url: 'application/crud/edit.php?id=' + id +'&tb_name=master_user',
                         type: 'POST',
                         dataType: 'JSON',
                         success: function (data) {
@@ -178,7 +178,5 @@ function ajaxAction(action) {
             $('#action').val('add');
             $('#edit_id').val('0');
         }
-    });
-    
-    console.log(v_dump)
+    });        
 }

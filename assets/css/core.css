@@ -108,7 +108,7 @@ a:focus {
     padding: 20px 30px;
     position: absolute;
     right: 0px;
-    left: 240px;
+    left: 220px;
     font-size: 13px;
 }
 .footer-user {
@@ -1285,7 +1285,7 @@ pre {
 .side-menu {
     bottom: 0;
     top: 0;
-    width: 240px;
+    width: 220px;
     z-index: 2;
 }
 .side-menu.left {
@@ -1303,7 +1303,7 @@ body.fixed-left .side-menu.left {
     position: fixed;
 }
 .content-page {
-    margin-left: 240px;
+    margin-left: 220px;
     overflow: hidden;
 }
 .content-page > .content {
@@ -1385,7 +1385,7 @@ body.fixed-left .side-menu.left {
 #sidebar-menu > ul > li > a {
     color: #36404a;
     display: block;
-    padding: 12px 20px;
+    padding: 6px 10px;
     margin: 4px 0px;
     border-left: 3px solid #ffffff;
 }

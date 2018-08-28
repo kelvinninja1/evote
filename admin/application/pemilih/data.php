@@ -1,5 +1,4 @@
 <?php
-
 include_once '../../../config/class.php';
 $db = new dbObj();
 $connString = $db->getConstring();
@@ -22,6 +21,7 @@ switch ($action) {
 class CRUD {
 
     protected $conn;
+    protected $data = [];
 
     function __construct($connString) {
         $this->conn = $connString;

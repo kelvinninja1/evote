@@ -61,7 +61,7 @@ $(document).ready(function () {
                     $('#edit_id').val(id);
 
                     v_edit = $.ajax({
-                        url: 'application/kandidat/edit.php?id=' + id,
+                        url: 'application/crud/edit.php?id=' + id +'&tb_name=master_kandidat',
                         type: 'POST',
                         dataType: 'JSON',
                         success: function (data) {
@@ -93,11 +93,6 @@ $(document).ready(function () {
             },
             wakil: {
                 required: true
-            },
-            password: {
-                required: true,
-                pwcheck: /^[A-Za-z0-9\d=!\-@._*]+$/,
-                minlength: 6
             }
         },
         messages: {
@@ -106,11 +101,6 @@ $(document).ready(function () {
             },
             wakil: {
                 required: ' *) field is required'
-            },
-            password: {
-                required: '*) Password is required',
-                pwcheck: 'at least capital, lower and numeric allowed',
-                minlength: 'min 6 characters'
             }
         },
         submitHandler: function (form) {

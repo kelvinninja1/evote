@@ -19,9 +19,7 @@
         </div>
         <!-- END wrapper -->
 
-        <script>
-            var resizefunc = [];
-        </script>
+        <script>var resizefunc = [];</script>
 
         <!-- jQuery  -->
         <script src="assets/js/jquery.min.js"></script>

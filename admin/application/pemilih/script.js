@@ -62,7 +62,7 @@ $(document).ready(function () {
                     $('#edit_id').val(id);
 
                     v_edit = $.ajax({
-                        url: 'application/pemilih/edit.php?id=' + id,
+                        url: 'application/crud/edit.php?id=' + id + '&tb_name=data_pemilih',
                         type: 'POST',
                         dataType: 'JSON',
                         success: function (data) {
